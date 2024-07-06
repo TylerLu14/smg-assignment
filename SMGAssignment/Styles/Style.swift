@@ -7,11 +7,6 @@
 
 import Foundation
 
-class ImageNames {
-    /// Image ic_listing_placeholder
-    static let icListingPlaceholder = "ic_listing_placeholder"
-}
-
 class Spacing {
     // MARK: Sizing Constants
     /// Spacing.Zero = 0.0

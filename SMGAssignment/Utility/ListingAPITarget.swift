@@ -7,10 +7,6 @@
 
 import Foundation
 
-struct ListRequestParameter: Encodable {
-    
-}
-
 /// Enum of card API
 enum ListingAPITarget: APITargetProtocol {
     case getListing
