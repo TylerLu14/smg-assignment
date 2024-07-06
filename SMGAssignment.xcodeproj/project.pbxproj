@@ -25,6 +25,8 @@
 		8919CD872C391928005D4CB7 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD862C391928005D4CB7 /* Listing.swift */; };
 		8919CD892C391947005D4CB7 /* ListingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD882C391947005D4CB7 /* ListingRequest.swift */; };
 		8919CD8B2C391A6B005D4CB7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */; };
+		8919CD8D2C392156005D4CB7 /* RealEstateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD8C2C392156005D4CB7 /* RealEstateItemView.swift */; };
+		8919CD902C392D0F005D4CB7 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8919CD8F2C392D0F005D4CB7 /* ACarousel */; };
 		89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */; };
 		89DCB9122C385EE400369518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9112C385EE400369518 /* Assets.xcassets */; };
 		89DCB9152C385EE400369518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9142C385EE400369518 /* Preview Assets.xcassets */; };
@@ -32,7 +34,6 @@
 		89DCB9292C385EE500369518 /* SMGAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB9282C385EE500369518 /* SMGAssignmentUITests.swift */; };
 		89DCB92B2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB92A2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift */; };
 		89DCB9392C385F1E00369518 /* AsyncContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB9382C385F1D00369518 /* AsyncContentView.swift */; };
-		89DCB9402C3865DC00369518 /* ReflectiveEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB93F2C3865DC00369518 /* ReflectiveEquatable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		8919CD862C391928005D4CB7 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		8919CD882C391947005D4CB7 /* ListingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingRequest.swift; sourceTree = "<group>"; };
 		8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		8919CD8C2C392156005D4CB7 /* RealEstateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateItemView.swift; sourceTree = "<group>"; };
 		89DCB90A2C385EE200369518 /* SMGAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMGAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentApp.swift; sourceTree = "<group>"; };
 		89DCB9112C385EE400369518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +82,6 @@
 		89DCB9282C385EE500369518 /* SMGAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentUITests.swift; sourceTree = "<group>"; };
 		89DCB92A2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89DCB9382C385F1D00369518 /* AsyncContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncContentView.swift; sourceTree = "<group>"; };
-		89DCB93F2C3865DC00369518 /* ReflectiveEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectiveEquatable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8919CD902C392D0F005D4CB7 /* ACarousel in Frameworks */,
 				8919CD7A2C390AAF005D4CB7 /* BetterCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,7 +188,6 @@
 				8919CD752C3905D3005D4CB7 /* WebServices */,
 				8919CD722C3904E2005D4CB7 /* Extensions */,
 				8919CD652C38F748005D4CB7 /* Styles */,
-				89DCB93E2C3865CB00369518 /* Helper */,
 				89DCB93D2C38600100369518 /* Utility */,
 				89DCB93C2C385FFB00369518 /* Models */,
 				89DCB9372C385F0500369518 /* Base */,
@@ -235,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				8919CD602C38EEAA005D4CB7 /* RealEstateListView.swift */,
+				8919CD8C2C392156005D4CB7 /* RealEstateItemView.swift */,
 				8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */,
 			);
 			path = Views;
@@ -263,14 +265,6 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		89DCB93E2C3865CB00369518 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				89DCB93F2C3865DC00369518 /* ReflectiveEquatable.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,6 +283,7 @@
 			name = SMGAssignment;
 			packageProductDependencies = (
 				8919CD792C390AAF005D4CB7 /* BetterCodable */,
+				8919CD8F2C392D0F005D4CB7 /* ACarousel */,
 			);
 			productName = SMGAssignment;
 			productReference = 89DCB90A2C385EE200369518 /* SMGAssignment.app */;
@@ -364,6 +359,7 @@
 			mainGroup = 89DCB9012C385EE200369518;
 			packageReferences = (
 				8919CD782C390AAF005D4CB7 /* XCRemoteSwiftPackageReference "BetterCodable" */,
+				8919CD8E2C392D0F005D4CB7 /* XCRemoteSwiftPackageReference "ACarousel" */,
 			);
 			productRefGroup = 89DCB90B2C385EE200369518 /* Products */;
 			projectDirPath = "";
@@ -407,10 +403,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8919CD8D2C392156005D4CB7 /* RealEstateItemView.swift in Sources */,
 				8919CD7C2C390B45005D4CB7 /* BetterCodableExtension.swift in Sources */,
 				8919CD612C38EEAA005D4CB7 /* RealEstateListView.swift in Sources */,
 				8919CD632C38F015005D4CB7 /* RealEstateItem.swift in Sources */,
-				89DCB9402C3865DC00369518 /* ReflectiveEquatable.swift in Sources */,
 				89DCB9392C385F1E00369518 /* AsyncContentView.swift in Sources */,
 				8919CD6B2C38F900005D4CB7 /* APITarget.swift in Sources */,
 				8919CD6D2C38F95B005D4CB7 /* ListingAPITarget.swift in Sources */,
@@ -766,6 +762,14 @@
 				minimumVersion = 0.4.0;
 			};
 		};
+		8919CD8E2C392D0F005D4CB7 /* XCRemoteSwiftPackageReference "ACarousel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/JWAutumn/ACarousel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -773,6 +777,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8919CD782C390AAF005D4CB7 /* XCRemoteSwiftPackageReference "BetterCodable" */;
 			productName = BetterCodable;
+		};
+		8919CD8F2C392D0F005D4CB7 /* ACarousel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8919CD8E2C392D0F005D4CB7 /* XCRemoteSwiftPackageReference "ACarousel" */;
+			productName = ACarousel;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

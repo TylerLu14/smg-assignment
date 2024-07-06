@@ -8,9 +8,6 @@
 import SwiftUI
 import Combine
 
-
-extension LoadingState: ReflectiveEquatable { }
-
 /// Define loading state of a view
 enum LoadingState<Value> {
     /// Do nothing state or normal state

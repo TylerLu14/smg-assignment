@@ -32,5 +32,32 @@ extension RealEstateListView {
                 )
                 .store(in: &cancellables)
         }
+        
+        func refresh() async {
+            do {
+                let response = try await withCheckedThrowingContinuation { continuation in
+                    service.getListings()
+                        .sink(
+                            receiveCompletion: { completion in
+                                switch completion {
+                                case .finished:
+                                    break
+                                case .failure(let error):
+                                    continuation.resume(with: .failure(error))
+                                }
+                            },
+                            receiveValue: { response in
+                                continuation.resume(with: .success(response))
+                            }
+                        )
+                        .store(in: &cancellables)
+                }
+                state = .loaded(response.results)
+            } catch {
+                state = .failed(error)
+            }
+            
+                        
+        }
     }
 }

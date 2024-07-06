@@ -34,3 +34,10 @@ class Spacing {
     /// Spacing.XXXXLarge = 64.0
     static let xxxxLarge = 64.0
 }
+
+class Size {
+    /// Size.listingImageHeight = 250.0
+    static let listingImageHeight = 250.0
+    /// Size.buttonHeight = 250.0
+    static let buttonHeight = 42.0
+}

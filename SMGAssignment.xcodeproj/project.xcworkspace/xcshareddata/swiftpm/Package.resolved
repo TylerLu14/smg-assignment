@@ -1,6 +1,15 @@
 {
-  "originHash" : "9f3654f2d60751a93756081eb54c0630eb2457f34bfbd0c1d15c709da228b8ec",
+  "originHash" : "a88d0cb7c9497f785d00b856a15e3888e6609c9362f8e0bde844fe0a16495bc0",
   "pins" : [
+    {
+      "identity" : "acarousel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JWAutumn/ACarousel.git",
+      "state" : {
+        "revision" : "8a322513580f21288fd87eb3a1341c247b3e2a76",
+        "version" : "0.2.0"
+      }
+    },
     {
       "identity" : "bettercodable",
       "kind" : "remoteSourceControl",

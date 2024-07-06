@@ -29,31 +29,15 @@ struct RealEstateListView: View {
     
     @ViewBuilder
     func content(items: [RealEstateItem]) -> some View {
-        ScrollView {
-            LazyVStack(spacing: Spacing.medium) {
+        ScrollView(.vertical, showsIndicators: true) {
+            VStack(spacing: Spacing.xSmall) {
                 ForEach(items) { item in
-                    ForEach(item.listing.localization.de.images, id: \.url) { listing in
-                        if let url = listing.urlObject {
-                            AsyncImage(
-                                url: url,
-                                content: { image in
-                                    image
-                                        .resizable()
-                                        .scaledToFill()
-                                },
-                                placeholder: {
-                                    Image(ImageResource.icListingPlaceholder)
-                                        .resizable()
-                                        .padding(Spacing.xxLarge)
-                                        .scaledToFill()
-                                }
-                            )
-                            .frame(height: 300)
-                            .clipped()
-                        }
-                    }
+                    RealEstateItemView(item: item)
                 }
             }
+        }
+        .refreshable {
+            await observed.refresh()
         }
     }
 }
