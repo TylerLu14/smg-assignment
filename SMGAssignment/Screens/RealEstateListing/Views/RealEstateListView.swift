@@ -14,25 +14,32 @@ struct RealEstateListView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                AsyncContentView(
-                    source: observed,
-                    initialView: { Color.clear },
-                    loadingView: { ProgressView() },
-                    errorView: { error in ErrorView(error: error) },
-                    content: content
-                )
-                .navigationTitle("SMG Assignment")
+            AsyncContentView(
+                source: observed,
+                initialView: { Color.clear },
+                loadingView: { ProgressView() },
+                errorView: { error in ErrorView(error: error) },
+                content: content
+            )
+            .navigationTitle("SMG Assignment")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        observed.toggleFavorite()
+                    }, label: {
+                        Image(systemName: observed.isShowFavorite ? "heart.fill" : "heart")
+                    })
+                }
             }
         }
     }
     
     @ViewBuilder
-    func content(items: [RealEstateItem]) -> some View {
+    func content(observeds: [RealEstateItemView.Observed]) -> some View {
         ScrollView(.vertical, showsIndicators: true) {
-            VStack(spacing: Spacing.xSmall) {
-                ForEach(items) { item in
-                    RealEstateItemView(item: item)
+            LazyVStack(spacing: Spacing.xSmall) {
+                ForEach(observeds) { observed in
+                    RealEstateItemView(observed: observed)
                 }
             }
         }

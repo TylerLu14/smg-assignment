@@ -19,7 +19,7 @@
 		8919CD772C3905DF005D4CB7 /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD762C3905DF005D4CB7 /* ListingService.swift */; };
 		8919CD7A2C390AAF005D4CB7 /* BetterCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 8919CD792C390AAF005D4CB7 /* BetterCodable */; };
 		8919CD7C2C390B45005D4CB7 /* BetterCodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD7B2C390B45005D4CB7 /* BetterCodableExtension.swift */; };
-		8919CD7E2C390ECE005D4CB7 /* RealEstateViewObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD7D2C390ECE005D4CB7 /* RealEstateViewObserved.swift */; };
+		8919CD7E2C390ECE005D4CB7 /* RealEstateListObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD7D2C390ECE005D4CB7 /* RealEstateListObserved.swift */; };
 		8919CD802C391086005D4CB7 /* BaseObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD7F2C391086005D4CB7 /* BaseObserved.swift */; };
 		8919CD852C391919005D4CB7 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD842C391919005D4CB7 /* Address.swift */; };
 		8919CD872C391928005D4CB7 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD862C391928005D4CB7 /* Listing.swift */; };
@@ -27,6 +27,18 @@
 		8919CD8B2C391A6B005D4CB7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */; };
 		8919CD8D2C392156005D4CB7 /* RealEstateItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD8C2C392156005D4CB7 /* RealEstateItemView.swift */; };
 		8919CD902C392D0F005D4CB7 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8919CD8F2C392D0F005D4CB7 /* ACarousel */; };
+		891E5F3C2C3979C000312BF4 /* InjectedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F3B2C3979C000312BF4 /* InjectedValues.swift */; };
+		891E5F3F2C397A4E00312BF4 /* Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F3E2C397A4E00312BF4 /* Injections.swift */; };
+		891E5F412C397C1D00312BF4 /* PriceTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F402C397C1D00312BF4 /* PriceTagView.swift */; };
+		891E5F432C39802200312BF4 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F422C39802200312BF4 /* StringExtensions.swift */; };
+		891E5F452C3985B000312BF4 /* RealEstateItemObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F442C3985B000312BF4 /* RealEstateItemObserved.swift */; };
+		891E5F472C39884300312BF4 /* Persistent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F462C39884300312BF4 /* Persistent.swift */; };
+		891E5F492C398AA300312BF4 /* SMGAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F482C398AA300312BF4 /* SMGAsyncImage.swift */; };
+		891E5F502C399D9F00312BF4 /* ACarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4A2C399D9F00312BF4 /* ACarousel.swift */; };
+		891E5F512C399D9F00312BF4 /* ACarouselAutoScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4B2C399D9F00312BF4 /* ACarouselAutoScroll.swift */; };
+		891E5F522C399D9F00312BF4 /* ACarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4C2C399D9F00312BF4 /* ACarouselViewModel.swift */; };
+		891E5F532C399D9F00312BF4 /* AppLifeCycleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4D2C399D9F00312BF4 /* AppLifeCycleModifier.swift */; };
+		891E5F542C399D9F00312BF4 /* View+ReceiveTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4E2C399D9F00312BF4 /* View+ReceiveTimer.swift */; };
 		89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */; };
 		89DCB9122C385EE400369518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9112C385EE400369518 /* Assets.xcassets */; };
 		89DCB9152C385EE400369518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9142C385EE400369518 /* Preview Assets.xcassets */; };
@@ -65,13 +77,25 @@
 		8919CD732C3904F0005D4CB7 /* AnyPublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPublisherExtension.swift; sourceTree = "<group>"; };
 		8919CD762C3905DF005D4CB7 /* ListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingService.swift; sourceTree = "<group>"; };
 		8919CD7B2C390B45005D4CB7 /* BetterCodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterCodableExtension.swift; sourceTree = "<group>"; };
-		8919CD7D2C390ECE005D4CB7 /* RealEstateViewObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateViewObserved.swift; sourceTree = "<group>"; };
+		8919CD7D2C390ECE005D4CB7 /* RealEstateListObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateListObserved.swift; sourceTree = "<group>"; };
 		8919CD7F2C391086005D4CB7 /* BaseObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObserved.swift; sourceTree = "<group>"; };
 		8919CD842C391919005D4CB7 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		8919CD862C391928005D4CB7 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		8919CD882C391947005D4CB7 /* ListingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingRequest.swift; sourceTree = "<group>"; };
 		8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		8919CD8C2C392156005D4CB7 /* RealEstateItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateItemView.swift; sourceTree = "<group>"; };
+		891E5F3B2C3979C000312BF4 /* InjectedValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedValues.swift; sourceTree = "<group>"; };
+		891E5F3E2C397A4E00312BF4 /* Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injections.swift; sourceTree = "<group>"; };
+		891E5F402C397C1D00312BF4 /* PriceTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTagView.swift; sourceTree = "<group>"; };
+		891E5F422C39802200312BF4 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		891E5F442C3985B000312BF4 /* RealEstateItemObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateItemObserved.swift; sourceTree = "<group>"; };
+		891E5F462C39884300312BF4 /* Persistent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistent.swift; sourceTree = "<group>"; };
+		891E5F482C398AA300312BF4 /* SMGAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAsyncImage.swift; sourceTree = "<group>"; };
+		891E5F4A2C399D9F00312BF4 /* ACarousel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACarousel.swift; sourceTree = "<group>"; };
+		891E5F4B2C399D9F00312BF4 /* ACarouselAutoScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACarouselAutoScroll.swift; sourceTree = "<group>"; };
+		891E5F4C2C399D9F00312BF4 /* ACarouselViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ACarouselViewModel.swift; sourceTree = "<group>"; };
+		891E5F4D2C399D9F00312BF4 /* AppLifeCycleModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLifeCycleModifier.swift; sourceTree = "<group>"; };
+		891E5F4E2C399D9F00312BF4 /* View+ReceiveTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ReceiveTimer.swift"; sourceTree = "<group>"; };
 		89DCB90A2C385EE200369518 /* SMGAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMGAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentApp.swift; sourceTree = "<group>"; };
 		89DCB9112C385EE400369518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +148,7 @@
 			children = (
 				8919CD732C3904F0005D4CB7 /* AnyPublisherExtension.swift */,
 				8919CD7B2C390B45005D4CB7 /* BetterCodableExtension.swift */,
+				891E5F422C39802200312BF4 /* StringExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -139,7 +164,8 @@
 		8919CD812C3918DD005D4CB7 /* Observed */ = {
 			isa = PBXGroup;
 			children = (
-				8919CD7D2C390ECE005D4CB7 /* RealEstateViewObserved.swift */,
+				8919CD7D2C390ECE005D4CB7 /* RealEstateListObserved.swift */,
+				891E5F442C3985B000312BF4 /* RealEstateItemObserved.swift */,
 			);
 			path = Observed;
 			sourceTree = "<group>";
@@ -159,6 +185,18 @@
 				89DCB93A2C385FEA00369518 /* Views */,
 			);
 			path = RealEstateListing;
+			sourceTree = "<group>";
+		};
+		891E5F4F2C399D9F00312BF4 /* ACarousel */ = {
+			isa = PBXGroup;
+			children = (
+				891E5F4A2C399D9F00312BF4 /* ACarousel.swift */,
+				891E5F4B2C399D9F00312BF4 /* ACarouselAutoScroll.swift */,
+				891E5F4C2C399D9F00312BF4 /* ACarouselViewModel.swift */,
+				891E5F4D2C399D9F00312BF4 /* AppLifeCycleModifier.swift */,
+				891E5F4E2C399D9F00312BF4 /* View+ReceiveTimer.swift */,
+			);
+			path = ACarousel;
 			sourceTree = "<group>";
 		};
 		89DCB9012C385EE200369518 = {
@@ -184,6 +222,7 @@
 		89DCB90C2C385EE200369518 /* SMGAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				891E5F4F2C399D9F00312BF4 /* ACarousel */,
 				8919CD822C3918E8005D4CB7 /* Screens */,
 				8919CD752C3905D3005D4CB7 /* WebServices */,
 				8919CD722C3904E2005D4CB7 /* Extensions */,
@@ -228,6 +267,7 @@
 			children = (
 				89DCB9382C385F1D00369518 /* AsyncContentView.swift */,
 				8919CD7F2C391086005D4CB7 /* BaseObserved.swift */,
+				891E5F482C398AA300312BF4 /* SMGAsyncImage.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -238,6 +278,7 @@
 				8919CD602C38EEAA005D4CB7 /* RealEstateListView.swift */,
 				8919CD8C2C392156005D4CB7 /* RealEstateItemView.swift */,
 				8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */,
+				891E5F402C397C1D00312BF4 /* PriceTagView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +302,9 @@
 				8919CD6C2C38F95B005D4CB7 /* ListingAPITarget.swift */,
 				8919CD6E2C38FB00005D4CB7 /* APIError.swift */,
 				8919CD702C38FCBC005D4CB7 /* Logger.swift */,
+				891E5F3B2C3979C000312BF4 /* InjectedValues.swift */,
+				891E5F3E2C397A4E00312BF4 /* Injections.swift */,
+				891E5F462C39884300312BF4 /* Persistent.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -403,10 +447,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891E5F432C39802200312BF4 /* StringExtensions.swift in Sources */,
 				8919CD8D2C392156005D4CB7 /* RealEstateItemView.swift in Sources */,
+				891E5F412C397C1D00312BF4 /* PriceTagView.swift in Sources */,
 				8919CD7C2C390B45005D4CB7 /* BetterCodableExtension.swift in Sources */,
+				891E5F522C399D9F00312BF4 /* ACarouselViewModel.swift in Sources */,
+				891E5F532C399D9F00312BF4 /* AppLifeCycleModifier.swift in Sources */,
 				8919CD612C38EEAA005D4CB7 /* RealEstateListView.swift in Sources */,
+				891E5F502C399D9F00312BF4 /* ACarousel.swift in Sources */,
+				891E5F3F2C397A4E00312BF4 /* Injections.swift in Sources */,
+				891E5F3C2C3979C000312BF4 /* InjectedValues.swift in Sources */,
+				891E5F512C399D9F00312BF4 /* ACarouselAutoScroll.swift in Sources */,
+				891E5F492C398AA300312BF4 /* SMGAsyncImage.swift in Sources */,
 				8919CD632C38F015005D4CB7 /* RealEstateItem.swift in Sources */,
+				891E5F472C39884300312BF4 /* Persistent.swift in Sources */,
 				89DCB9392C385F1E00369518 /* AsyncContentView.swift in Sources */,
 				8919CD6B2C38F900005D4CB7 /* APITarget.swift in Sources */,
 				8919CD6D2C38F95B005D4CB7 /* ListingAPITarget.swift in Sources */,
@@ -418,8 +472,10 @@
 				8919CD892C391947005D4CB7 /* ListingRequest.swift in Sources */,
 				8919CD672C38F759005D4CB7 /* Style.swift in Sources */,
 				8919CD852C391919005D4CB7 /* Address.swift in Sources */,
+				891E5F452C3985B000312BF4 /* RealEstateItemObserved.swift in Sources */,
 				8919CD8B2C391A6B005D4CB7 /* ErrorView.swift in Sources */,
-				8919CD7E2C390ECE005D4CB7 /* RealEstateViewObserved.swift in Sources */,
+				8919CD7E2C390ECE005D4CB7 /* RealEstateListObserved.swift in Sources */,
+				891E5F542C399D9F00312BF4 /* View+ReceiveTimer.swift in Sources */,
 				8919CD6F2C38FB00005D4CB7 /* APIError.swift in Sources */,
 				89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */,
 				8919CD802C391086005D4CB7 /* BaseObserved.swift in Sources */,

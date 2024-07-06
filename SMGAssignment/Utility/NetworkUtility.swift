@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import UIKit
 
 class NetworkUtility {
     struct Constants {
@@ -109,5 +110,14 @@ class NetworkUtility {
         case .failure(let error):
             Logger.e("\(type(of: self))", error.localizedDescription)
         }
+    }
+    
+    func downloadImage(url: URL) -> AnyPublisher<UIImage?, Error> {
+        urlSession.dataTaskPublisher(for: url)
+            .tryMap { data, response in
+                UIImage(data: data)
+            }
+            .handleEvents(receiveCompletion: logError)
+            .eraseToAnyPublisher()
     }
 }

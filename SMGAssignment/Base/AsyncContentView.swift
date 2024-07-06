@@ -57,9 +57,9 @@ struct AsyncContentView<Source: LoadableObject, InitialView: View, LoadingView: 
 
     init(
         source: Source,
-        @ViewBuilder initialView: @escaping () -> InitialView,
-        @ViewBuilder loadingView: @escaping () -> LoadingView,
-        @ViewBuilder errorView: @escaping (Error) -> ErrorView,
+        @ViewBuilder initialView: @escaping () -> InitialView = { Color.clear },
+        @ViewBuilder loadingView: @escaping () -> LoadingView = { Color.clear },
+        @ViewBuilder errorView: @escaping (Error) -> ErrorView = { _ in Color.clear },
         @ViewBuilder content: @escaping (Source.Output) -> Content
     ) {
         self.source = source
@@ -69,3 +69,50 @@ struct AsyncContentView<Source: LoadableObject, InitialView: View, LoadingView: 
         self.content = content
     }
 }
+
+/// An object can can boradcast its loading status
+@Observable class PublishedObject<Wrapped: Publisher>: LoadableObject {
+    private(set) var state = LoadingState<Wrapped.Output>.idle
+
+    private let publisher: Wrapped
+    
+    private var cancellables = Set<AnyCancellable>()
+
+    init(publisher: Wrapped) {
+        self.publisher = publisher
+    }
+    /// Start the loading process of the object and broadcast its status
+    func load() {
+        state = .loading
+
+        publisher
+            .map(LoadingState.loaded)
+            .catch { error in
+                Just(LoadingState.failed(error))
+            }
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { value in
+                self.state = value
+            })
+            .store(in: &cancellables)
+    }
+}
+
+extension AsyncContentView {
+    init<P: Publisher>(
+        publisher: P,
+        @ViewBuilder initialView: @escaping () -> InitialView,
+        @ViewBuilder loadingView: @escaping () -> LoadingView,
+        @ViewBuilder errorView: @escaping (Error) -> ErrorView,
+        @ViewBuilder content: @escaping (Source.Output) -> Content
+    ) where Source == PublishedObject<P> {
+        self.init(
+            source: PublishedObject(publisher: publisher),
+            initialView: initialView,
+            loadingView: loadingView,
+            errorView: errorView,
+            content: content
+        )
+    }
+}
+
