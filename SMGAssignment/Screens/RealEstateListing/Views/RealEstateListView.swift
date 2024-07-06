@@ -29,6 +29,7 @@ struct RealEstateListView: View {
                     }, label: {
                         Image(systemName: observed.isShowFavorite ? "heart.fill" : "heart")
                     })
+                    .foregroundStyle(Color(ColorResource.textGray))
                 }
             }
         }

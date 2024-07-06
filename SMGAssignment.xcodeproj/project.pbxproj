@@ -12,8 +12,6 @@
 		8919CD672C38F759005D4CB7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD662C38F759005D4CB7 /* Style.swift */; };
 		8919CD692C38F87E005D4CB7 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD682C38F87E005D4CB7 /* NetworkUtility.swift */; };
 		8919CD6B2C38F900005D4CB7 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD6A2C38F900005D4CB7 /* APITarget.swift */; };
-		8919CD6D2C38F95B005D4CB7 /* ListingAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD6C2C38F95B005D4CB7 /* ListingAPITarget.swift */; };
-		8919CD6F2C38FB00005D4CB7 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD6E2C38FB00005D4CB7 /* APIError.swift */; };
 		8919CD712C38FCBC005D4CB7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD702C38FCBC005D4CB7 /* Logger.swift */; };
 		8919CD742C3904F0005D4CB7 /* AnyPublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD732C3904F0005D4CB7 /* AnyPublisherExtension.swift */; };
 		8919CD772C3905DF005D4CB7 /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD762C3905DF005D4CB7 /* ListingService.swift */; };
@@ -39,6 +37,7 @@
 		891E5F522C399D9F00312BF4 /* ACarouselViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4C2C399D9F00312BF4 /* ACarouselViewModel.swift */; };
 		891E5F532C399D9F00312BF4 /* AppLifeCycleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4D2C399D9F00312BF4 /* AppLifeCycleModifier.swift */; };
 		891E5F542C399D9F00312BF4 /* View+ReceiveTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891E5F4E2C399D9F00312BF4 /* View+ReceiveTimer.swift */; };
+		891E5F592C39C2B500312BF4 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 891E5F582C39C2B500312BF4 /* Mockingbird */; };
 		89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */; };
 		89DCB9122C385EE400369518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9112C385EE400369518 /* Assets.xcassets */; };
 		89DCB9152C385EE400369518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9142C385EE400369518 /* Preview Assets.xcassets */; };
@@ -71,8 +70,6 @@
 		8919CD662C38F759005D4CB7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		8919CD682C38F87E005D4CB7 /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
 		8919CD6A2C38F900005D4CB7 /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
-		8919CD6C2C38F95B005D4CB7 /* ListingAPITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingAPITarget.swift; sourceTree = "<group>"; };
-		8919CD6E2C38FB00005D4CB7 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		8919CD702C38FCBC005D4CB7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		8919CD732C3904F0005D4CB7 /* AnyPublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPublisherExtension.swift; sourceTree = "<group>"; };
 		8919CD762C3905DF005D4CB7 /* ListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingService.swift; sourceTree = "<group>"; };
@@ -122,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				891E5F592C39C2B500312BF4 /* Mockingbird in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +154,7 @@
 		8919CD752C3905D3005D4CB7 /* WebServices */ = {
 			isa = PBXGroup;
 			children = (
+				8919CD6A2C38F900005D4CB7 /* APITarget.swift */,
 				8919CD762C3905DF005D4CB7 /* ListingService.swift */,
 			);
 			path = WebServices;
@@ -173,6 +172,7 @@
 		8919CD822C3918E8005D4CB7 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				891E5F552C39A99B00312BF4 /* ErrorView */,
 				8919CD832C3918F3005D4CB7 /* RealEstateListing */,
 			);
 			path = Screens;
@@ -199,6 +199,23 @@
 			path = ACarousel;
 			sourceTree = "<group>";
 		};
+		891E5F552C39A99B00312BF4 /* ErrorView */ = {
+			isa = PBXGroup;
+			children = (
+				8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */,
+			);
+			path = ErrorView;
+			sourceTree = "<group>";
+		};
+		891E5F562C39AF8900312BF4 /* DependencyInjections */ = {
+			isa = PBXGroup;
+			children = (
+				891E5F3B2C3979C000312BF4 /* InjectedValues.swift */,
+				891E5F3E2C397A4E00312BF4 /* Injections.swift */,
+			);
+			path = DependencyInjections;
+			sourceTree = "<group>";
+		};
 		89DCB9012C385EE200369518 = {
 			isa = PBXGroup;
 			children = (
@@ -223,13 +240,14 @@
 			isa = PBXGroup;
 			children = (
 				891E5F4F2C399D9F00312BF4 /* ACarousel */,
+				89DCB9372C385F0500369518 /* Base */,
+				891E5F562C39AF8900312BF4 /* DependencyInjections */,
 				8919CD822C3918E8005D4CB7 /* Screens */,
 				8919CD752C3905D3005D4CB7 /* WebServices */,
 				8919CD722C3904E2005D4CB7 /* Extensions */,
 				8919CD652C38F748005D4CB7 /* Styles */,
 				89DCB93D2C38600100369518 /* Utility */,
 				89DCB93C2C385FFB00369518 /* Models */,
-				89DCB9372C385F0500369518 /* Base */,
 				89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */,
 				89DCB9112C385EE400369518 /* Assets.xcassets */,
 				89DCB9132C385EE400369518 /* Preview Content */,
@@ -277,7 +295,6 @@
 			children = (
 				8919CD602C38EEAA005D4CB7 /* RealEstateListView.swift */,
 				8919CD8C2C392156005D4CB7 /* RealEstateItemView.swift */,
-				8919CD8A2C391A6B005D4CB7 /* ErrorView.swift */,
 				891E5F402C397C1D00312BF4 /* PriceTagView.swift */,
 			);
 			path = Views;
@@ -297,13 +314,8 @@
 		89DCB93D2C38600100369518 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				8919CD682C38F87E005D4CB7 /* NetworkUtility.swift */,
-				8919CD6A2C38F900005D4CB7 /* APITarget.swift */,
-				8919CD6C2C38F95B005D4CB7 /* ListingAPITarget.swift */,
-				8919CD6E2C38FB00005D4CB7 /* APIError.swift */,
 				8919CD702C38FCBC005D4CB7 /* Logger.swift */,
-				891E5F3B2C3979C000312BF4 /* InjectedValues.swift */,
-				891E5F3E2C397A4E00312BF4 /* Injections.swift */,
+				8919CD682C38F87E005D4CB7 /* NetworkUtility.swift */,
 				891E5F462C39884300312BF4 /* Persistent.swift */,
 			);
 			path = Utility;
@@ -337,6 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89DCB9312C385EE500369518 /* Build configuration list for PBXNativeTarget "SMGAssignmentTests" */;
 			buildPhases = (
+				4895F6D1C35DBC4B7DF0A73B /* Generate Mockingbird Mocks */,
 				89DCB9162C385EE500369518 /* Sources */,
 				89DCB9172C385EE500369518 /* Frameworks */,
 				89DCB9182C385EE500369518 /* Resources */,
@@ -347,6 +360,9 @@
 				89DCB91C2C385EE500369518 /* PBXTargetDependency */,
 			);
 			name = SMGAssignmentTests;
+			packageProductDependencies = (
+				891E5F582C39C2B500312BF4 /* Mockingbird */,
+			);
 			productName = SMGAssignmentTests;
 			productReference = 89DCB91A2C385EE500369518 /* SMGAssignmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -404,6 +420,7 @@
 			packageReferences = (
 				8919CD782C390AAF005D4CB7 /* XCRemoteSwiftPackageReference "BetterCodable" */,
 				8919CD8E2C392D0F005D4CB7 /* XCRemoteSwiftPackageReference "ACarousel" */,
+				891E5F572C39C2B500312BF4 /* XCRemoteSwiftPackageReference "mockingbird" */,
 			);
 			productRefGroup = 89DCB90B2C385EE200369518 /* Products */;
 			projectDirPath = "";
@@ -442,6 +459,25 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4895F6D1C35DBC4B7DF0A73B /* Generate Mockingbird Mocks */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Mockingbird Mocks";
+			outputPaths = (
+				"$(SRCROOT)/MockingbirdMocks/SMGAssignmentTests-SMGAssignmentMocks.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\n\n# Prevent Xcode 13 from running this script while indexing.\n[[ \"${ACTION}\" == \"indexbuild\" ]] && exit 0\n\n# Infer the derived data location from the build environment.\n[[ -z \"${DERIVED_DATA+x}\" ]] && DERIVED_DATA=\"$(echo \"${BUILD_ROOT}\" | sed -n 's|\\(.*\\)/Build/.*|\\1|p')\"\n\n\"${DERIVED_DATA}/SourcePackages/checkouts/mockingbird/mockingbird\" generate --targets \"SMGAssignment\" --outputs \"${SRCROOT}/MockingbirdMocks/SMGAssignmentTests-SMGAssignmentMocks.generated.swift\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		89DCB9062C385EE200369518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -463,7 +499,6 @@
 				891E5F472C39884300312BF4 /* Persistent.swift in Sources */,
 				89DCB9392C385F1E00369518 /* AsyncContentView.swift in Sources */,
 				8919CD6B2C38F900005D4CB7 /* APITarget.swift in Sources */,
-				8919CD6D2C38F95B005D4CB7 /* ListingAPITarget.swift in Sources */,
 				8919CD712C38FCBC005D4CB7 /* Logger.swift in Sources */,
 				8919CD772C3905DF005D4CB7 /* ListingService.swift in Sources */,
 				8919CD692C38F87E005D4CB7 /* NetworkUtility.swift in Sources */,
@@ -476,7 +511,6 @@
 				8919CD8B2C391A6B005D4CB7 /* ErrorView.swift in Sources */,
 				8919CD7E2C390ECE005D4CB7 /* RealEstateListObserved.swift in Sources */,
 				891E5F542C399D9F00312BF4 /* View+ReceiveTimer.swift in Sources */,
-				8919CD6F2C38FB00005D4CB7 /* APIError.swift in Sources */,
 				89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */,
 				8919CD802C391086005D4CB7 /* BaseObserved.swift in Sources */,
 			);
@@ -826,6 +860,14 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		891E5F572C39C2B500312BF4 /* XCRemoteSwiftPackageReference "mockingbird" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/birdrides/mockingbird";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.20.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -838,6 +880,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8919CD8E2C392D0F005D4CB7 /* XCRemoteSwiftPackageReference "ACarousel" */;
 			productName = ACarousel;
+		};
+		891E5F582C39C2B500312BF4 /* Mockingbird */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 891E5F572C39C2B500312BF4 /* XCRemoteSwiftPackageReference "mockingbird" */;
+			productName = Mockingbird;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

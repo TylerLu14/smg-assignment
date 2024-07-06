@@ -7,6 +7,32 @@
 
 import Combine
 
+
+enum ListingAPITarget: APITargetProtocol {
+    case getListing
+    
+    
+    var method: APIMethod { .GET }
+    var headers: [String : String] { defaultHeaders }
+    var host: String { "https://private-9f1bb1-homegate3.apiary-mock.com" }
+
+    var path: String {
+        switch self {
+        case .getListing: return "properties"
+        }
+    }
+    
+    var urlString: String {
+        "\(host)/\(path)"
+    }
+    
+    var parameters: Encodable {
+        switch self {
+        case .getListing: return ListRequestParameter()
+        }
+    }
+}
+
 protocol ListingServiceProtocol {
     func getListings() -> AnyPublisher<ListingResponse, Error>
     func getListings() async throws -> ListingResponse

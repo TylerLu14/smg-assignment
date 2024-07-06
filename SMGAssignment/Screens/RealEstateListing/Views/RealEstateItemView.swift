@@ -84,7 +84,7 @@ struct RealEstateItemView: View {
                         Text(item.listing.localization.de.text.title)
                             .font(.title3)
                         HStack {
-                            Image(systemName: "location.locationviewfinder")
+                            Image(systemName: "location.viewfinder")
                             Text("\(item.listing.address.street), \(item.listing.address.country)")
                                 .font(.caption)
                         }
