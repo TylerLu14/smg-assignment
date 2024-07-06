@@ -11,7 +11,7 @@ import SwiftUI
 struct SMGAssignmentApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RealEstateListView()
         }
     }
 }

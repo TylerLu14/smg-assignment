@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8919CD612C38EEAA005D4CB7 /* RealEstateListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD602C38EEAA005D4CB7 /* RealEstateListView.swift */; };
+		8919CD632C38F015005D4CB7 /* RealEstateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD622C38F015005D4CB7 /* RealEstateItem.swift */; };
+		8919CD672C38F759005D4CB7 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD662C38F759005D4CB7 /* Style.swift */; };
+		8919CD692C38F87E005D4CB7 /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD682C38F87E005D4CB7 /* NetworkUtility.swift */; };
+		8919CD6B2C38F900005D4CB7 /* APITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD6A2C38F900005D4CB7 /* APITarget.swift */; };
+		8919CD6D2C38F95B005D4CB7 /* ListingAPITarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD6C2C38F95B005D4CB7 /* ListingAPITarget.swift */; };
+		8919CD6F2C38FB00005D4CB7 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD6E2C38FB00005D4CB7 /* APIError.swift */; };
+		8919CD712C38FCBC005D4CB7 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD702C38FCBC005D4CB7 /* Logger.swift */; };
+		8919CD742C3904F0005D4CB7 /* AnyPublisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD732C3904F0005D4CB7 /* AnyPublisherExtension.swift */; };
+		8919CD772C3905DF005D4CB7 /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD762C3905DF005D4CB7 /* ListingService.swift */; };
+		8919CD7A2C390AAF005D4CB7 /* BetterCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 8919CD792C390AAF005D4CB7 /* BetterCodable */; };
+		8919CD7C2C390B45005D4CB7 /* BetterCodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD7B2C390B45005D4CB7 /* BetterCodableExtension.swift */; };
+		8919CD7E2C390ECE005D4CB7 /* RealEstateViewObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD7D2C390ECE005D4CB7 /* RealEstateViewObserved.swift */; };
+		8919CD802C391086005D4CB7 /* BaseObserved.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919CD7F2C391086005D4CB7 /* BaseObserved.swift */; };
 		89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */; };
-		89DCB9102C385EE200369518 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90F2C385EE200369518 /* ContentView.swift */; };
 		89DCB9122C385EE400369518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9112C385EE400369518 /* Assets.xcassets */; };
 		89DCB9152C385EE400369518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9142C385EE400369518 /* Preview Assets.xcassets */; };
 		89DCB91F2C385EE500369518 /* SMGAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB91E2C385EE500369518 /* SMGAssignmentTests.swift */; };
@@ -36,9 +49,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8919CD602C38EEAA005D4CB7 /* RealEstateListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateListView.swift; sourceTree = "<group>"; };
+		8919CD622C38F015005D4CB7 /* RealEstateItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateItem.swift; sourceTree = "<group>"; };
+		8919CD662C38F759005D4CB7 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		8919CD682C38F87E005D4CB7 /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
+		8919CD6A2C38F900005D4CB7 /* APITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITarget.swift; sourceTree = "<group>"; };
+		8919CD6C2C38F95B005D4CB7 /* ListingAPITarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingAPITarget.swift; sourceTree = "<group>"; };
+		8919CD6E2C38FB00005D4CB7 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		8919CD702C38FCBC005D4CB7 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		8919CD732C3904F0005D4CB7 /* AnyPublisherExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyPublisherExtension.swift; sourceTree = "<group>"; };
+		8919CD762C3905DF005D4CB7 /* ListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingService.swift; sourceTree = "<group>"; };
+		8919CD7B2C390B45005D4CB7 /* BetterCodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterCodableExtension.swift; sourceTree = "<group>"; };
+		8919CD7D2C390ECE005D4CB7 /* RealEstateViewObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealEstateViewObserved.swift; sourceTree = "<group>"; };
+		8919CD7F2C391086005D4CB7 /* BaseObserved.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObserved.swift; sourceTree = "<group>"; };
 		89DCB90A2C385EE200369518 /* SMGAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMGAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentApp.swift; sourceTree = "<group>"; };
-		89DCB90F2C385EE200369518 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89DCB9112C385EE400369518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89DCB9142C385EE400369518 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89DCB91A2C385EE500369518 /* SMGAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMGAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8919CD7A2C390AAF005D4CB7 /* BetterCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +101,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8919CD652C38F748005D4CB7 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				8919CD662C38F759005D4CB7 /* Style.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		8919CD722C3904E2005D4CB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8919CD732C3904F0005D4CB7 /* AnyPublisherExtension.swift */,
+				8919CD7B2C390B45005D4CB7 /* BetterCodableExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8919CD752C3905D3005D4CB7 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				8919CD762C3905DF005D4CB7 /* ListingService.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
 		89DCB9012C385EE200369518 = {
 			isa = PBXGroup;
 			children = (
@@ -98,13 +149,15 @@
 		89DCB90C2C385EE200369518 /* SMGAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				8919CD752C3905D3005D4CB7 /* WebServices */,
+				8919CD722C3904E2005D4CB7 /* Extensions */,
+				8919CD652C38F748005D4CB7 /* Styles */,
 				89DCB93E2C3865CB00369518 /* Helper */,
-				89DCB93D2C38600100369518 /* NetworkUtility */,
+				89DCB93D2C38600100369518 /* Utility */,
 				89DCB93C2C385FFB00369518 /* Models */,
 				89DCB93A2C385FEA00369518 /* Views */,
-				89DCB9372C385F0500369518 /* CommonView */,
+				89DCB9372C385F0500369518 /* Base */,
 				89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */,
-				89DCB90F2C385EE200369518 /* ContentView.swift */,
 				89DCB9112C385EE400369518 /* Assets.xcassets */,
 				89DCB9132C385EE400369518 /* Preview Content */,
 			);
@@ -136,17 +189,20 @@
 			path = SMGAssignmentUITests;
 			sourceTree = "<group>";
 		};
-		89DCB9372C385F0500369518 /* CommonView */ = {
+		89DCB9372C385F0500369518 /* Base */ = {
 			isa = PBXGroup;
 			children = (
 				89DCB9382C385F1D00369518 /* AsyncContentView.swift */,
+				8919CD7F2C391086005D4CB7 /* BaseObserved.swift */,
 			);
-			path = CommonView;
+			path = Base;
 			sourceTree = "<group>";
 		};
 		89DCB93A2C385FEA00369518 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8919CD602C38EEAA005D4CB7 /* RealEstateListView.swift */,
+				8919CD7D2C390ECE005D4CB7 /* RealEstateViewObserved.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,15 +210,21 @@
 		89DCB93C2C385FFB00369518 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8919CD622C38F015005D4CB7 /* RealEstateItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		89DCB93D2C38600100369518 /* NetworkUtility */ = {
+		89DCB93D2C38600100369518 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				8919CD682C38F87E005D4CB7 /* NetworkUtility.swift */,
+				8919CD6A2C38F900005D4CB7 /* APITarget.swift */,
+				8919CD6C2C38F95B005D4CB7 /* ListingAPITarget.swift */,
+				8919CD6E2C38FB00005D4CB7 /* APIError.swift */,
+				8919CD702C38FCBC005D4CB7 /* Logger.swift */,
 			);
-			path = NetworkUtility;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		89DCB93E2C3865CB00369518 /* Helper */ = {
@@ -189,6 +251,9 @@
 			dependencies = (
 			);
 			name = SMGAssignment;
+			packageProductDependencies = (
+				8919CD792C390AAF005D4CB7 /* BetterCodable */,
+			);
 			productName = SMGAssignment;
 			productReference = 89DCB90A2C385EE200369518 /* SMGAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -261,6 +326,9 @@
 				Base,
 			);
 			mainGroup = 89DCB9012C385EE200369518;
+			packageReferences = (
+				8919CD782C390AAF005D4CB7 /* XCRemoteSwiftPackageReference "BetterCodable" */,
+			);
 			productRefGroup = 89DCB90B2C385EE200369518 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -303,10 +371,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DCB9102C385EE200369518 /* ContentView.swift in Sources */,
+				8919CD7C2C390B45005D4CB7 /* BetterCodableExtension.swift in Sources */,
+				8919CD612C38EEAA005D4CB7 /* RealEstateListView.swift in Sources */,
+				8919CD632C38F015005D4CB7 /* RealEstateItem.swift in Sources */,
 				89DCB9402C3865DC00369518 /* ReflectiveEquatable.swift in Sources */,
 				89DCB9392C385F1E00369518 /* AsyncContentView.swift in Sources */,
+				8919CD6B2C38F900005D4CB7 /* APITarget.swift in Sources */,
+				8919CD6D2C38F95B005D4CB7 /* ListingAPITarget.swift in Sources */,
+				8919CD712C38FCBC005D4CB7 /* Logger.swift in Sources */,
+				8919CD772C3905DF005D4CB7 /* ListingService.swift in Sources */,
+				8919CD692C38F87E005D4CB7 /* NetworkUtility.swift in Sources */,
+				8919CD742C3904F0005D4CB7 /* AnyPublisherExtension.swift in Sources */,
+				8919CD672C38F759005D4CB7 /* Style.swift in Sources */,
+				8919CD7E2C390ECE005D4CB7 /* RealEstateViewObserved.swift in Sources */,
+				8919CD6F2C38FB00005D4CB7 /* APIError.swift in Sources */,
 				89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */,
+				8919CD802C391086005D4CB7 /* BaseObserved.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8919CD782C390AAF005D4CB7 /* XCRemoteSwiftPackageReference "BetterCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marksands/BetterCodable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8919CD792C390AAF005D4CB7 /* BetterCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8919CD782C390AAF005D4CB7 /* XCRemoteSwiftPackageReference "BetterCodable" */;
+			productName = BetterCodable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89DCB9022C385EE200369518 /* Project object */;
 }

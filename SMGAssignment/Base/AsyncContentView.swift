@@ -24,7 +24,7 @@ enum LoadingState<Value> {
 }
 
 /// An observable object whom its loading state can be tracked
-protocol LoadableObject: ObservableObject {
+protocol LoadableObject {
     associatedtype Output
     /// Current state of the object
     var state: LoadingState<Output> { get }
@@ -35,7 +35,7 @@ protocol LoadableObject: ObservableObject {
 /// The view that can be loaded asynchronously
 struct AsyncContentView<Source: LoadableObject, InitialView: View, LoadingView: View, Content: View, ErrorView: View>: View {
     /// The source of truth
-    @ObservedObject var source: Source
+    var source: Source
     /// The view that is used to display the loading status
     var initialView: () -> InitialView
     /// The view that is used to display the loading status
@@ -44,8 +44,6 @@ struct AsyncContentView<Source: LoadableObject, InitialView: View, LoadingView: 
     var errorView: (Error) -> ErrorView
     /// The content which is shown
     var content: (Source.Output) -> Content
-
-    @State private var isLoadingPresented = false
 
     var body: some View {
         switch source.state {
