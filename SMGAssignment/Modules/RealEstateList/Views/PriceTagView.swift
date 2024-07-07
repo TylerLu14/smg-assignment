@@ -14,13 +14,14 @@ struct PriceTagView: View {
     var body: some View {
         VStack(alignment: .trailing) {
             Text("\(price.currency.currencySymbol)\(price.buy.price)")
-                .font(.caption)
+                .padding(.vertical, Spacing.small)
+                .padding(.leading, Spacing.medium)
+                .padding(.trailing, Spacing.small)
+                .font(.caption2)
                 .foregroundStyle(Color(ColorResource.textGray))
         }
-        .padding(.horizontal, Spacing.small)
-        .padding(.vertical, Spacing.xxSmall)
         .background {
-            RoundedRectangle(cornerRadius: Spacing.xxSmall)
+            PriceTagShape()
                 .fill(Color(ColorResource.backgroundWhite))
         }
         .shadow(radius: Spacing.xxSmall)

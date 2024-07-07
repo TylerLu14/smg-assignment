@@ -11,7 +11,6 @@ import Combine
 enum ListingAPITarget: APITargetProtocol {
     case getListing
     
-    
     var method: APIMethod { .GET }
     var headers: [String : String] { defaultHeaders }
     var host: String { "https://private-9f1bb1-homegate3.apiary-mock.com" }
@@ -49,7 +48,7 @@ class ListingService: ListingServiceProtocol{
     
     func getListings() async throws -> ListingResponse {
         try await withCheckedThrowingContinuation { continuation in
-            networkUtility.request(target: ListingAPITarget.getListing)
+            getListings()
                 .sink(receiveCompletion: { completion in
                     switch completion {
                     case .finished:
@@ -62,6 +61,5 @@ class ListingService: ListingServiceProtocol{
                 })
                 .store(in: &cancellables)
         }
-        
     }
 }
