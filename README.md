@@ -11,6 +11,7 @@ SMG Interview Assignment
 https://github.com/TylerLu14/smg-assignment/assets/20063699/7e8e7c8f-02a0-41e3-96c8-c46da995d013
 
 ## Technologies Used
+- **XCode 15.4**, **Swift 5**
 - SwiftUI
 - Combine
 - Dependency Injections
