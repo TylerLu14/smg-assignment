@@ -1,5 +1,5 @@
 //
-//  RealEstateItemObserved.swift
+//  RealestateItemObserved.swift
 //  SMGAssignment
 //
 //  Created by Lữ on 7/6/24.
@@ -8,19 +8,21 @@
 import SwiftUI
 import Combine
 
-extension RealEstateItemView {
-    @Observable class Observed: BaseObserved<RealEstateItem> {
+extension RealestateItemView {
+    @Observable class Observed: BaseObserved<RealestateItem> {
         @ObservationIgnored
         @Injected(\.networkUtility) private var networkUtility
         
-        private var persistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
-        private let item: RealEstateItem
+        @ObservationIgnored
+        private var favoritePersistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
+        
+        private let item: RealestateItem
         
         var isFavorite: Bool
         var imagePublishers: [(String, AnyPublisher<UIImage?, Error>)] = []
         var selectedIndex: Int = 0
         
-        init(item: RealEstateItem, isFavorite: Bool) {
+        init(item: RealestateItem, isFavorite: Bool) {
             self.item = item
             self.isFavorite = isFavorite
         }
@@ -40,9 +42,9 @@ extension RealEstateItemView {
         func toggleFavorite() {
             isFavorite = !isFavorite
             if isFavorite {
-                persistent.value[id] = true
+                favoritePersistent.value[id] = true
             } else {
-                persistent.value[id] = nil
+                favoritePersistent.value[id] = nil
             }
             
         }
@@ -50,7 +52,7 @@ extension RealEstateItemView {
 }
 
 
-extension RealEstateItemView.Observed: Identifiable {
+extension RealestateItemView.Observed: Identifiable {
     var id: String {
         item.id
     }

@@ -74,8 +74,10 @@ struct AsyncContentView<Source: LoadableObject, InitialView: View, LoadingView: 
 @Observable class PublishedObject<Wrapped: Publisher>: LoadableObject {
     private(set) var state = LoadingState<Wrapped.Output>.idle
 
+    @ObservationIgnored
     private let publisher: Wrapped
     
+    @ObservationIgnored
     private var cancellables = Set<AnyCancellable>()
 
     init(publisher: Wrapped) {

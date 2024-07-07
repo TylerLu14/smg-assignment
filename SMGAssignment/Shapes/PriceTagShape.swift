@@ -7,51 +7,6 @@
 
 import SwiftUI
 
-struct PriceTagShapeParameters {
-    struct Segment {
-        let line: CGPoint
-        let curve: CGPoint
-        let control: CGPoint
-    }
-    
-    
-    static let adjustment: CGFloat = 0.05
-    
-    static let startingPoint = CGPoint(
-        x: 0.00 + adjustment/2,
-        y: 0.50 - adjustment * 3
-    )
-    
-    
-    static let segments = [
-        Segment(
-            line:    CGPoint(x: 0.15 - adjustment, y: 0.00 + adjustment * 2),
-            curve:   CGPoint(x: 0.15 + adjustment, y: 0.00),
-            control: CGPoint(x: 0.15, y: 0.00)
-        ),
-        Segment(
-            line:    CGPoint(x: 1.00 - adjustment, y: 0.00),
-            curve:   CGPoint(x: 1.00, y: 0.00 + adjustment * 2),
-            control: CGPoint(x: 1.00, y: 0.00)
-        ),
-        Segment(
-            line:    CGPoint(x: 1.00, y: 1.00 - adjustment * 2),
-            curve:   CGPoint(x: 1.00 - adjustment, y: 1.00),
-            control: CGPoint(x: 1.00, y: 1.00)
-        ),
-        Segment(
-            line:    CGPoint(x: 0.15 + adjustment, y: 1.00),
-            curve:   CGPoint(x: 0.15 - adjustment, y: 1.00 - adjustment * 2),
-            control: CGPoint(x: 0.15, y: 1.00)
-        ),
-        Segment(
-            line:    CGPoint(x: 0.00 + adjustment/2, y: 0.50 + adjustment * 3),
-            curve:   startingPoint,
-            control: CGPoint(x: 0.00 - adjustment, y: 0.50)
-        ),
-    ]
-}
-
 public struct PriceTagShape: Shape {
     class Constants {
         static let startingPoint = CGPoint(
@@ -60,7 +15,6 @@ public struct PriceTagShape: Shape {
         )
         
         static let adjustment: CGFloat = 2
-        
         static let headWidth: CGFloat = 16.0
     }
     
@@ -70,9 +24,6 @@ public struct PriceTagShape: Shape {
     public func path(in rect: CGRect) -> Path {
         let width = rect.width
         let height = rect.height
-        
-        print(width)
-        print(height)
 
         return Path { path in
             path.move(

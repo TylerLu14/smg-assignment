@@ -1,0 +1,33 @@
+{
+  "originHash" : "e81ba9f0912aa1ecd0cec1406504b33c99f575e615b3545756559048bfaee0f6",
+  "pins" : [
+    {
+      "identity" : "acarousel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/JWAutumn/ACarousel.git",
+      "state" : {
+        "revision" : "8a322513580f21288fd87eb3a1341c247b3e2a76",
+        "version" : "0.2.0"
+      }
+    },
+    {
+      "identity" : "bettercodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/marksands/BetterCodable",
+      "state" : {
+        "revision" : "61153170668db7a46a20a87e35e70f80b24d4eb5",
+        "version" : "0.4.0"
+      }
+    },
+    {
+      "identity" : "mockingbird",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/birdrides/mockingbird",
+      "state" : {
+        "revision" : "6e0d473df6b975719e145f6aebf90990c634700e",
+        "version" : "0.20.0"
+      }
+    }
+  ],
+  "version" : 3
+}

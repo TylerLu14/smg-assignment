@@ -1,5 +1,5 @@
 //
-//  RealEstateItemView.swift
+//  RealestateItemView.swift
 //  SMGAssignment
 //
 //  Created by Lữ on 7/6/24.
@@ -8,7 +8,7 @@
 import SwiftUI
 import ACarousel
 
-struct RealEstateItemView: View {
+struct RealestateItemView: View {
     @Injected(\.networkUtility) var networkUtility
     
     @Bindable var observed: Observed

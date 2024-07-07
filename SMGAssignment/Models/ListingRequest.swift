@@ -15,5 +15,5 @@ struct ListingResponse: Decodable {
     var from: Int
     var size: Int
     var total: Int
-    var results: [RealEstateItem]
+    var results: [RealestateItem]
 }

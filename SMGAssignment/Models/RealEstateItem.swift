@@ -8,7 +8,7 @@
 import Foundation
 import BetterCodable
 
-struct RealEstateItem: Decodable {
+struct RealestateItem: Decodable {
     struct ListerBrand: Decodable {
         var logoUrl: String
         var legalName: String
@@ -26,4 +26,4 @@ struct RealEstateItem: Decodable {
     var listing: Listing
 }
 
-extension RealEstateItem: Identifiable {} 
+extension RealestateItem: Identifiable {} 

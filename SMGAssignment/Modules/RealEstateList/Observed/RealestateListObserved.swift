@@ -1,5 +1,5 @@
 //
-//  RealEstateViewObserved.swift
+//  RealestateViewObserved.swift
 //  SMGAssignment
 //
 //  Created by Lữ on 7/6/24.
@@ -8,19 +8,24 @@
 import SwiftUI
 import Combine
 
-extension RealEstateListView {
+extension RealestateListView {
     @Observable
-    class Observed: BaseObserved<[RealEstateItemView.Observed]> {
-        @ObservationIgnored @Injected(\.listingService) private var service
-        private var persistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
+    class Observed: BaseObserved<[RealestateItemView.Observed]> {
+        @ObservationIgnored 
+        @Injected(\.listingService) private var service
         
+        @ObservationIgnored
+        private var favoritePersistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
+        
+        @ObservationIgnored
         private var cancellables = Set<AnyCancellable>()
         
         var isShowFavorite: Bool = false
-        var items: [RealEstateItemView.Observed] = []
+        var items: [RealestateItemView.Observed] = []
         
         override func load() {
             state = .loading
+            
             service.getListings()
                 .sink(
                     receiveCompletion: { [unowned self] completion in
@@ -33,9 +38,9 @@ extension RealEstateListView {
                     },
                     receiveValue: { [unowned self] response in
                         items = response.results.map {
-                            RealEstateItemView.Observed(
+                            RealestateItemView.Observed(
                                 item: $0,
-                                isFavorite: persistent.value[$0.id] ?? false
+                                isFavorite: favoritePersistent.value[$0.id] ?? false
                             )
                         }
                         reloadItems()
@@ -48,9 +53,9 @@ extension RealEstateListView {
             do {
                 let response = try await service.getListings()
                 items = response.results.map {
-                    RealEstateItemView.Observed(
+                    RealestateItemView.Observed(
                         item: $0,
-                        isFavorite: persistent.value[$0.id] ?? false
+                        isFavorite: favoritePersistent.value[$0.id] ?? false
                     )
                 }
                 reloadItems()

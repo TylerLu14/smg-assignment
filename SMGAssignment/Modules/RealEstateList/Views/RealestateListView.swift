@@ -1,5 +1,5 @@
 //
-//  RealEstateListView.swift
+//  RealestateListView.swift
 //  SMGAssignment
 //
 //  Created by Lữ on 7/6/24.
@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import Combine
 
-struct RealEstateListView: View {
+struct RealestateListView: View {
     @State var observed = Observed()
     
     var body: some View {
@@ -36,11 +36,11 @@ struct RealEstateListView: View {
     }
     
     @ViewBuilder
-    func content(observeds: [RealEstateItemView.Observed]) -> some View {
+    func content(observeds: [RealestateItemView.Observed]) -> some View {
         ScrollView(.vertical, showsIndicators: true) {
             LazyVStack(spacing: Spacing.xSmall) {
                 ForEach(observeds) { observed in
-                    RealEstateItemView(observed: observed)
+                    RealestateItemView(observed: observed)
                 }
             }
         }
@@ -51,5 +51,5 @@ struct RealEstateListView: View {
 }
 
 #Preview {
-    RealEstateListView()
+    RealestateListView()
 }
