@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "0EEA6AEC-33E6-4679-A399-C6BE091BBA14",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:SMGAssignment.xcodeproj",
+      "identifier" : "89DCB9092C385EE200369518",
+      "name" : "SMGAssignment"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:SMGAssignment.xcodeproj",
+        "identifier" : "89DCB9192C385EE500369518",
+        "name" : "SMGAssignmentTests"
+      }
+    }
+  ],
+  "version" : 1
+}

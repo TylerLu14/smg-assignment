@@ -49,20 +49,11 @@
 		89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */; };
 		89DCB9122C385EE400369518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9112C385EE400369518 /* Assets.xcassets */; };
 		89DCB9152C385EE400369518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9142C385EE400369518 /* Preview Assets.xcassets */; };
-		89DCB9292C385EE500369518 /* SMGAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB9282C385EE500369518 /* SMGAssignmentUITests.swift */; };
-		89DCB92B2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB92A2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift */; };
 		89DCB9392C385F1E00369518 /* AsyncContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB9382C385F1D00369518 /* AsyncContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		89DCB91B2C385EE500369518 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89DCB9022C385EE200369518 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89DCB9092C385EE200369518;
-			remoteInfo = SMGAssignment;
-		};
-		89DCB9252C385EE500369518 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 89DCB9022C385EE200369518 /* Project object */;
 			proxyType = 1;
@@ -108,14 +99,12 @@
 		895827042C3A7F660095AD1A /* LoadingStateEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateEquatable.swift; sourceTree = "<group>"; };
 		899699C62C3A8D3700E5F68C /* RealestateItemViewObservedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateItemViewObservedTests.swift; sourceTree = "<group>"; };
 		89DB2FBA2C3AEEA600CA5D31 /* CurrencySymbolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolTests.swift; sourceTree = "<group>"; };
+		89DB2FBC2C3AF2F300CA5D31 /* SMGAssignment.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = SMGAssignment.xctestplan; sourceTree = "<group>"; };
 		89DCB90A2C385EE200369518 /* SMGAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMGAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentApp.swift; sourceTree = "<group>"; };
 		89DCB9112C385EE400369518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89DCB9142C385EE400369518 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89DCB91A2C385EE500369518 /* SMGAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMGAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89DCB9242C385EE500369518 /* SMGAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMGAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89DCB9282C385EE500369518 /* SMGAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentUITests.swift; sourceTree = "<group>"; };
-		89DCB92A2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		89DCB9382C385F1D00369518 /* AsyncContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,13 +123,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				891E5F592C39C2B500312BF4 /* Mockingbird in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89DCB9212C385EE500369518 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +241,10 @@
 		89DCB9012C385EE200369518 = {
 			isa = PBXGroup;
 			children = (
+				89DB2FBC2C3AF2F300CA5D31 /* SMGAssignment.xctestplan */,
 				895826F72C3A462E0095AD1A /* MockingbirdMocks */,
 				89DCB90C2C385EE200369518 /* SMGAssignment */,
 				89DCB91D2C385EE500369518 /* SMGAssignmentTests */,
-				89DCB9272C385EE500369518 /* SMGAssignmentUITests */,
 				89DCB90B2C385EE200369518 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -272,7 +254,6 @@
 			children = (
 				89DCB90A2C385EE200369518 /* SMGAssignment.app */,
 				89DCB91A2C385EE500369518 /* SMGAssignmentTests.xctest */,
-				89DCB9242C385EE500369518 /* SMGAssignmentUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -314,15 +295,6 @@
 				89DB2FBA2C3AEEA600CA5D31 /* CurrencySymbolTests.swift */,
 			);
 			path = SMGAssignmentTests;
-			sourceTree = "<group>";
-		};
-		89DCB9272C385EE500369518 /* SMGAssignmentUITests */ = {
-			isa = PBXGroup;
-			children = (
-				89DCB9282C385EE500369518 /* SMGAssignmentUITests.swift */,
-				89DCB92A2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift */,
-			);
-			path = SMGAssignmentUITests;
 			sourceTree = "<group>";
 		};
 		89DCB9372C385F0500369518 /* Base */ = {
@@ -412,24 +384,6 @@
 			productReference = 89DCB91A2C385EE500369518 /* SMGAssignmentTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		89DCB9232C385EE500369518 /* SMGAssignmentUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89DCB9342C385EE500369518 /* Build configuration list for PBXNativeTarget "SMGAssignmentUITests" */;
-			buildPhases = (
-				89DCB9202C385EE500369518 /* Sources */,
-				89DCB9212C385EE500369518 /* Frameworks */,
-				89DCB9222C385EE500369518 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89DCB9262C385EE500369518 /* PBXTargetDependency */,
-			);
-			name = SMGAssignmentUITests;
-			productName = SMGAssignmentUITests;
-			productReference = 89DCB9242C385EE500369518 /* SMGAssignmentUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -444,10 +398,6 @@
 						CreatedOnToolsVersion = 15.4;
 					};
 					89DCB9192C385EE500369518 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 89DCB9092C385EE200369518;
-					};
-					89DCB9232C385EE500369518 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 89DCB9092C385EE200369518;
 					};
@@ -473,7 +423,6 @@
 			targets = (
 				89DCB9092C385EE200369518 /* SMGAssignment */,
 				89DCB9192C385EE500369518 /* SMGAssignmentTests */,
-				89DCB9232C385EE500369518 /* SMGAssignmentUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -493,13 +442,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				895827002C3A71750095AD1A /* mock_properties.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89DCB9222C385EE500369518 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,15 +518,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89DCB9202C385EE500369518 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89DCB9292C385EE500369518 /* SMGAssignmentUITests.swift in Sources */,
-				89DCB92B2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -592,11 +525,6 @@
 			isa = PBXTargetDependency;
 			target = 89DCB9092C385EE200369518 /* SMGAssignment */;
 			targetProxy = 89DCB91B2C385EE500369518 /* PBXContainerItemProxy */;
-		};
-		89DCB9262C385EE500369518 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89DCB9092C385EE200369518 /* SMGAssignment */;
-			targetProxy = 89DCB9252C385EE500369518 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -822,42 +750,6 @@
 			};
 			name = Release;
 		};
-		89DCB9352C385EE500369518 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 744HB64F84;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tyler.SMGAssignmentUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SMGAssignment;
-			};
-			name = Debug;
-		};
-		89DCB9362C385EE500369518 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 744HB64F84;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tyler.SMGAssignmentUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SMGAssignment;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -884,15 +776,6 @@
 			buildConfigurations = (
 				89DCB9322C385EE500369518 /* Debug */,
 				89DCB9332C385EE500369518 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89DCB9342C385EE500369518 /* Build configuration list for PBXNativeTarget "SMGAssignmentUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89DCB9352C385EE500369518 /* Debug */,
-				89DCB9362C385EE500369518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
