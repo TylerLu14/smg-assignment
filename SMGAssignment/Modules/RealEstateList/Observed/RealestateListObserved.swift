@@ -55,7 +55,7 @@ extension RealestateListView {
                 items = response.results.map {
                     RealestateItemView.Observed(
                         item: $0,
-                        isFavorite: favoritePersistent.value[$0.id] ?? false
+                        isFavorite: checkItemFavorited(id: $0.id)
                     )
                 }
                 reloadItems()
@@ -73,10 +73,16 @@ extension RealestateListView {
         
         private func reloadItems() {
             if isShowFavorite {
-                state = .loaded(items.filter { $0.isFavorite })
+                state = .loaded(
+                    items.filter { checkItemFavorited(id: $0.item.id) }
+                )
             } else {
                 state = .loaded(items)
             }
+        }
+        
+        private func checkItemFavorited(id: String) -> Bool {
+            favoritePersistent.value[id] ?? false
         }
     }
 }

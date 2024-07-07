@@ -12,9 +12,11 @@ import Combine
 
 final class RealestateListViewObservedTests: XCTestCase {
     let mockService = mock(ListingServiceProtocol.self)
+    var favoritePersistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
 
     override func setUpWithError() throws {
         InjectedValues[\.listingService] = mockService
+        favoritePersistent.value = [:]
     }
 
     /// - When the load method is instantiated
@@ -57,8 +59,8 @@ final class RealestateListViewObservedTests: XCTestCase {
             )
         
         let sut = RealestateListView.Observed()
-        let expectation = expectation(description: #function)
         
+        let expectation = expectation(description: #function)
         withObservationTracking {
             sut.load()
             _ = sut.state
@@ -131,7 +133,7 @@ final class RealestateListViewObservedTests: XCTestCase {
     }
     
     /// - When the refresh method is invoked
-    /// - Given the service returns an error when calling getListings
+    /// - Given the service returns an error when calling getListings and the current state is loaded
     /// - Then the Observed state is failed with the given error
     func testRefresh_Error() async throws {
         givenSwift(await mockService.getListings())
@@ -140,6 +142,7 @@ final class RealestateListViewObservedTests: XCTestCase {
             }
         
         let sut = RealestateListView.Observed()
+        sut.state = .loaded([])
         
         await sut.refresh()
         
@@ -148,6 +151,59 @@ final class RealestateListViewObservedTests: XCTestCase {
         switch sut.state {
         case .failed(let error):
             XCTAssertTrue(error is URLError)
+        default:
+            XCTFail("Expected Loaded State")
+        }
+    }
+    
+    
+    /// - When the toggleFavorite method is invoked
+    /// - Given the service returns an error when calling getListings and the current state is loaded
+    /// - Then the Observed state is failed with the given error
+    func testToggleFavorite() async throws {
+        givenSwift(mockService.getListings())
+            .willReturn(
+                Just(try JsonFileReader.shared.loadObject(fileName: "mock_properties"))
+                    .setFailureType(to: Error.self)
+                    .eraseToAnyPublisher()
+            )
+        
+        let sut = RealestateListView.Observed()
+        sut.load()
+        
+        try await Task.sleep(nanoseconds: 500_000_000)
+        
+        sut.toggleFavorite()
+        XCTAssertTrue(sut.isShowFavorite)
+        
+        switch sut.state {
+        case .loaded(let observeds):
+            XCTAssertEqual(observeds.count, 0)
+        default:
+            XCTFail("Expected Loaded State")
+        }
+        
+        sut.toggleFavorite()
+        XCTAssertFalse(sut.isShowFavorite)
+        switch sut.state {
+        case .loaded(let observeds):
+            XCTAssertEqual(observeds.count, 8)
+        default:
+            XCTFail("Expected Loaded State")
+        }
+        
+        // Given 2 items are added to favorite list
+        favoritePersistent.value["3001697853"] = true
+        favoritePersistent.value["3002090762"] = true
+        
+        sut.toggleFavorite()
+        
+        try await Task.sleep(nanoseconds: 1_500_000_000)
+        
+        XCTAssertTrue(sut.isShowFavorite)
+        switch sut.state {
+        case .loaded(let observeds):
+            XCTAssertEqual(observeds.count, 2)
         default:
             XCTFail("Expected Loaded State")
         }

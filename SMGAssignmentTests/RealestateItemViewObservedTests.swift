@@ -58,6 +58,23 @@ final class RealestateItemViewObservedTests: XCTestCase {
             )
             XCTAssertEqual(item.listing.localization.de.attachments.first?.file, "a197c04ddc.jpg")
             
+            XCTAssertEqual(sut.imagePublishers.count, 4)
+            XCTAssertEqual(
+                sut.imagePublishers[0].0,
+                "https://media2.homegate.ch/listings/hgonif/3001118202/image/98d48ffb80f47e03e03de3cbcf6e7f14.jpg"
+            )
+            XCTAssertEqual(
+                sut.imagePublishers[1].0,
+                "https://media2.homegate.ch/listings/hgonif/3001118202/image/29666fc528b0ceac4cabbd9a7ff5653a.jpg"
+            )
+            XCTAssertEqual(
+                sut.imagePublishers[2].0,
+                "https://media2.homegate.ch/listings/hgonif/3001118202/image/5501a2cdbdc164a5bf9b5f304e2e8d2d.png"
+            )
+            XCTAssertEqual(
+                sut.imagePublishers[3].0,
+                "https://media2.homegate.ch/listings/hgonif/3001118202/image/d70fb0c91cb2cb41e86dd5d5784b0276.jpg"
+            )
         default:
             XCTFail("RealestateItemView never falls to loading state. Data got loaded right away after calling load")
         }
@@ -77,6 +94,5 @@ final class RealestateItemViewObservedTests: XCTestCase {
         sut.toggleFavorite()
         XCTAssertFalse(favoritePersistent.value[item.id] ?? false)
     }
-    
 }
 

@@ -13,10 +13,8 @@ extension RealestateItemView {
         @ObservationIgnored
         @Injected(\.networkUtility) private var networkUtility
         
-        @ObservationIgnored
-        private var favoritePersistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
-        
-        private let item: RealestateItem
+        private var persistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
+        let item: RealestateItem
         
         var isFavorite: Bool
         var imagePublishers: [(String, AnyPublisher<UIImage?, Error>)] = []
@@ -42,9 +40,9 @@ extension RealestateItemView {
         func toggleFavorite() {
             isFavorite = !isFavorite
             if isFavorite {
-                favoritePersistent.value[id] = true
+                persistent.value[id] = true
             } else {
-                favoritePersistent.value[id] = nil
+                persistent.value[id] = nil
             }
             
         }
