@@ -11,7 +11,7 @@ import Combine
 extension RealEstateListView {
     @Observable
     class Observed: BaseObserved<[RealEstateItemView.Observed]> {
-        private let service = InjectedValues[\.listingService]
+        @ObservationIgnored @Injected(\.listingService) private var service
         private var persistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
         
         private var cancellables = Set<AnyCancellable>()

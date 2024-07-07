@@ -40,10 +40,12 @@
 		891E5F592C39C2B500312BF4 /* Mockingbird in Frameworks */ = {isa = PBXBuildFile; productRef = 891E5F582C39C2B500312BF4 /* Mockingbird */; };
 		895826F82C3A462E0095AD1A /* SMGAssignmentMocks.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895826F62C3A462E0095AD1A /* SMGAssignmentMocks.generated.swift */; };
 		895826FB2C3A4AE30095AD1A /* PriceTagShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895826FA2C3A4AE30095AD1A /* PriceTagShape.swift */; };
+		895826FD2C3A70710095AD1A /* RealestateListViewObservedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895826FC2C3A70710095AD1A /* RealestateListViewObservedTests.swift */; };
+		895827002C3A71750095AD1A /* mock_properties.json in Resources */ = {isa = PBXBuildFile; fileRef = 895826FF2C3A71750095AD1A /* mock_properties.json */; };
+		895827022C3A71A40095AD1A /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895827012C3A71A40095AD1A /* JsonFileReader.swift */; };
 		89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */; };
 		89DCB9122C385EE400369518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9112C385EE400369518 /* Assets.xcassets */; };
 		89DCB9152C385EE400369518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9142C385EE400369518 /* Preview Assets.xcassets */; };
-		89DCB91F2C385EE500369518 /* SMGAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB91E2C385EE500369518 /* SMGAssignmentTests.swift */; };
 		89DCB9292C385EE500369518 /* SMGAssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB9282C385EE500369518 /* SMGAssignmentUITests.swift */; };
 		89DCB92B2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB92A2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift */; };
 		89DCB9392C385F1E00369518 /* AsyncContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB9382C385F1D00369518 /* AsyncContentView.swift */; };
@@ -97,12 +99,14 @@
 		891E5F4E2C399D9F00312BF4 /* View+ReceiveTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+ReceiveTimer.swift"; sourceTree = "<group>"; };
 		895826F62C3A462E0095AD1A /* SMGAssignmentMocks.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMGAssignmentMocks.generated.swift; sourceTree = "<group>"; };
 		895826FA2C3A4AE30095AD1A /* PriceTagShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceTagShape.swift; sourceTree = "<group>"; };
+		895826FC2C3A70710095AD1A /* RealestateListViewObservedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateListViewObservedTests.swift; sourceTree = "<group>"; };
+		895826FF2C3A71750095AD1A /* mock_properties.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mock_properties.json; sourceTree = "<group>"; };
+		895827012C3A71A40095AD1A /* JsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileReader.swift; sourceTree = "<group>"; };
 		89DCB90A2C385EE200369518 /* SMGAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMGAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentApp.swift; sourceTree = "<group>"; };
 		89DCB9112C385EE400369518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89DCB9142C385EE400369518 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89DCB91A2C385EE500369518 /* SMGAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMGAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89DCB91E2C385EE500369518 /* SMGAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentTests.swift; sourceTree = "<group>"; };
 		89DCB9242C385EE500369518 /* SMGAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SMGAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCB9282C385EE500369518 /* SMGAssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentUITests.swift; sourceTree = "<group>"; };
 		89DCB92A2C385EE500369518 /* SMGAssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -229,6 +233,14 @@
 			path = Shapes;
 			sourceTree = "<group>";
 		};
+		895826FE2C3A713B0095AD1A /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				895826FF2C3A71750095AD1A /* mock_properties.json */,
+			);
+			path = JsonFiles;
+			sourceTree = "<group>";
+		};
 		89DCB9012C385EE200369518 = {
 			isa = PBXGroup;
 			children = (
@@ -253,11 +265,11 @@
 		89DCB90C2C385EE200369518 /* SMGAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				895826F92C3A4AD70095AD1A /* Shapes */,
+				8919CD822C3918E8005D4CB7 /* Modules */,
 				891E5F4F2C399D9F00312BF4 /* ACarousel */,
+				895826F92C3A4AD70095AD1A /* Shapes */,
 				89DCB9372C385F0500369518 /* Base */,
 				891E5F562C39AF8900312BF4 /* DependencyInjections */,
-				8919CD822C3918E8005D4CB7 /* Modules */,
 				8919CD752C3905D3005D4CB7 /* Services */,
 				8919CD722C3904E2005D4CB7 /* Extensions */,
 				89DCB93D2C38600100369518 /* Utility */,
@@ -280,7 +292,9 @@
 		89DCB91D2C385EE500369518 /* SMGAssignmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				89DCB91E2C385EE500369518 /* SMGAssignmentTests.swift */,
+				895826FE2C3A713B0095AD1A /* JsonFiles */,
+				895826FC2C3A70710095AD1A /* RealestateListViewObservedTests.swift */,
+				895827012C3A71A40095AD1A /* JsonFileReader.swift */,
 			);
 			path = SMGAssignmentTests;
 			sourceTree = "<group>";
@@ -461,6 +475,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				895827002C3A71750095AD1A /* mock_properties.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,8 +550,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89DCB91F2C385EE500369518 /* SMGAssignmentTests.swift in Sources */,
+				895827022C3A71A40095AD1A /* JsonFileReader.swift in Sources */,
 				895826F82C3A462E0095AD1A /* SMGAssignmentMocks.generated.swift in Sources */,
+				895826FD2C3A70710095AD1A /* RealestateListViewObservedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

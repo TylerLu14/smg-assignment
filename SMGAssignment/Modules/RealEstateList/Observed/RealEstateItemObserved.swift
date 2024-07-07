@@ -10,6 +10,9 @@ import Combine
 
 extension RealEstateItemView {
     @Observable class Observed: BaseObserved<RealEstateItem> {
+        @ObservationIgnored
+        @Injected(\.networkUtility) private var networkUtility
+        
         private var persistent = Persistent<[String:Bool]>(key: "favoriteItems", defaultValue: [:])
         private let item: RealEstateItem
         
@@ -26,7 +29,6 @@ extension RealEstateItemView {
             state = .loaded(item)
             
             imagePublishers = item.listing.localization.de.images.compactMap { image in
-                let networkUtility = InjectedValues[\.networkUtility]
                 if let url = image.urlObject {
                     return (image.url, networkUtility.downloadImage(url: url))
                 } else {
