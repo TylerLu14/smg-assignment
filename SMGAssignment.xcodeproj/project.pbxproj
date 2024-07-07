@@ -45,6 +45,7 @@
 		895827022C3A71A40095AD1A /* JsonFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895827012C3A71A40095AD1A /* JsonFileReader.swift */; };
 		895827052C3A7F660095AD1A /* LoadingStateEquatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895827042C3A7F660095AD1A /* LoadingStateEquatable.swift */; };
 		899699C72C3A8D3700E5F68C /* RealestateItemViewObservedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899699C62C3A8D3700E5F68C /* RealestateItemViewObservedTests.swift */; };
+		89DB2FBB2C3AEEA600CA5D31 /* CurrencySymbolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DB2FBA2C3AEEA600CA5D31 /* CurrencySymbolTests.swift */; };
 		89DCB90E2C385EE200369518 /* SMGAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */; };
 		89DCB9122C385EE400369518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9112C385EE400369518 /* Assets.xcassets */; };
 		89DCB9152C385EE400369518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DCB9142C385EE400369518 /* Preview Assets.xcassets */; };
@@ -106,6 +107,7 @@
 		895827012C3A71A40095AD1A /* JsonFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonFileReader.swift; sourceTree = "<group>"; };
 		895827042C3A7F660095AD1A /* LoadingStateEquatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateEquatable.swift; sourceTree = "<group>"; };
 		899699C62C3A8D3700E5F68C /* RealestateItemViewObservedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealestateItemViewObservedTests.swift; sourceTree = "<group>"; };
+		89DB2FBA2C3AEEA600CA5D31 /* CurrencySymbolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySymbolTests.swift; sourceTree = "<group>"; };
 		89DCB90A2C385EE200369518 /* SMGAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMGAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DCB90D2C385EE200369518 /* SMGAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SMGAssignmentApp.swift; sourceTree = "<group>"; };
 		89DCB9112C385EE400369518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				895827032C3A7F580095AD1A /* Helper */,
 				895826FC2C3A70710095AD1A /* RealestateListViewObservedTests.swift */,
 				899699C62C3A8D3700E5F68C /* RealestateItemViewObservedTests.swift */,
+				89DB2FBA2C3AEEA600CA5D31 /* CurrencySymbolTests.swift */,
 			);
 			path = SMGAssignmentTests;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				899699C72C3A8D3700E5F68C /* RealestateItemViewObservedTests.swift in Sources */,
 				895827052C3A7F660095AD1A /* LoadingStateEquatable.swift in Sources */,
 				895826F82C3A462E0095AD1A /* SMGAssignmentMocks.generated.swift in Sources */,
+				89DB2FBB2C3AEEA600CA5D31 /* CurrencySymbolTests.swift in Sources */,
 				895826FD2C3A70710095AD1A /* RealestateListViewObservedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
