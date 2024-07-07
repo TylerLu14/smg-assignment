@@ -1,7 +1,3 @@
-Certainly! Here's a sample README.md file tailored for an iOS application project:
-
----
-
 # Project Name
 
 ## Description
@@ -11,8 +7,8 @@ SMG Interview Assignment
 - List key features or functionalities of your app.
 - Highlight any unique aspects or innovative solutions implemented.
 
-## Screenshots
-(Optional) Include screenshots of your application in action. You can either embed images directly in the README or provide a link to a separate folder.
+## Demo Video
+https://github.com/TylerLu14/smg-assignment/assets/20063699/7e8e7c8f-02a0-41e3-96c8-c46da995d013
 
 ## Technologies Used
 - SwiftUI
@@ -26,16 +22,9 @@ SMG Interview Assignment
 2. Open `SMGAssignment.xcodeproj` in Xcode.
 3. Press `Cmd + R` or click on the "Run" button in Xcode to build and run the project on the iOS Simulator or a connected device.
 4. The Project using `Mockingbird` to generate mockup data. Run `DERIVED_DATA="$(xcodebuild -showBuildSettings | sed -n 's|.*BUILD_ROOT = \(.*\)/Build/.*|\1|p')"` to root the `DERIVED_DATA` folder before building Unit Tests.
-* If you're running to a problem with the build phase, consider removing the `Generate Mockingbird Mocks` build phase
+* If you're running to a problem with the build phase, consider removing the `Generate Mockingbird Mocks` build phase. This script will do nothing unless, you're creating more mocks
+<img width="500" alt="Screenshot 2024-07-07 at 5 36 16 PM" src="https://github.com/TylerLu14/smg-assignment/assets/20063699/212762dd-b0d9-426d-aba5-efc36e966463">
 5. Press `Cmd + U` or click on the "Run Test" button in Xcode to build and run the project unit tests on the iOS Simulator or a connected device.
-
-## Usage
-Provide any instructions or guidance on how to use your application. For example:
-- Explain the main functionalities and how to access/use them.
-- Provide any necessary setup or configuration instructions.
-
-## Credits
-Mention any contributors, resources, or tutorials you found helpful.
 
 ## License
 MIT
