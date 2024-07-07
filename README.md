@@ -4,8 +4,8 @@
 SMG Interview Assignment
 
 ## Features
-- List key features or functionalities of your app.
-- Highlight any unique aspects or innovative solutions implemented.
+- Realestate Listings
+- Favorite Items
 
 ## Demo Video
 https://github.com/TylerLu14/smg-assignment/assets/20063699/7e8e7c8f-02a0-41e3-96c8-c46da995d013
