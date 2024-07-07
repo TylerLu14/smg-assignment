@@ -8,7 +8,9 @@ SMG Interview Assignment
 - Favorite Items
 
 ## Demo Video
+
 https://github.com/TylerLu14/smg-assignment/assets/20063699/7e8e7c8f-02a0-41e3-96c8-c46da995d013
+
 https://github.com/TylerLu14/smg-assignment/assets/20063699/bf8fc2c0-aa9a-4be0-b01a-864474a4ed0f
 
 
